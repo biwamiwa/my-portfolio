@@ -4,7 +4,19 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "miwa tanaka",
-  description: "DJ / Soundscape Designer",
+  description: "musician・soundscape designer",
+  openGraph: {
+    title: "miwa tanaka",
+    description: "musician・soundscape designer",
+    url: "https://miwatanaka.com",
+    siteName: "miwa tanaka",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "miwa tanaka",
+    description: "musician・soundscape designer",
+  },
 };
 
 export default function RootLayout({
@@ -35,7 +47,7 @@ export default function RootLayout({
         <main className="px-6">{children}</main>
 
         {/* Footer */}
-        <footer className="px-6 pt-24 pb-8 text-sm opacity-40">
+        <footer className="px-6 pt-24 pb-8 text-xs opacity-40">
           &copy; 2026 miwa tanaka
         </footer>
       </body>

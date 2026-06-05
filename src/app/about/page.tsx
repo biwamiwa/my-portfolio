@@ -22,7 +22,7 @@ export default function AboutPage() {
       </p>
 
       {/* Bio EN */}
-      <p className="mb-6">
+      <p className="mb-6 text-xs">
         miwa tanaka started DJing at the age of 13 and has continued to develop
         her work through music production, sound research, and media art. Her
         research on the biwa led her to explore how environmental sounds shape
@@ -34,7 +34,7 @@ export default function AboutPage() {
       </p>
 
       {/* Bio JP */}
-      <p className="mb-12 opacity-50">
+      <p className="mb-12 text-xs opacity-50">
         13歳からDJとして活動。琵琶の研究を通して、環境音が認識に与える影響に関心を持つ。
         以降、音楽制作、環境音研究、メディアアートを軸に活動。現在は東京大学とトヨタ・モビリティ基金主催
         &ldquo;Good Life on Earth&rdquo;
