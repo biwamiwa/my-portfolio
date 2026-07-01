@@ -17,6 +17,7 @@ const projects: Record<
     statement?: string;
     image?: string;
     tracklist?: string[];
+    links?: { label: string; url: string }[];
     overview?: string;
     phases?: { label: string; text: string; image?: string }[];
     galleryImages?: string[];
@@ -32,6 +33,11 @@ const projects: Record<
     tracklist: [
       "1. come near me",
       "2. a life between enacting and extending",
+    ],
+    links: [
+      { label: "Apple Music", url: "https://music.apple.com/jp/album/come-near-me-single/6776370191" },
+      { label: "Spotify", url: "https://open.spotify.com/intl-ja/album/4zNarbvB3JyW9EzgLUwnqQ?si=vGRemjBMTZKUkC9y71lJNQ" },
+      { label: "YouTube", url: "https://youtube.com/playlist?list=OLAK5uy_mYp2jPQf1GWeu1W30h0RbgoFqF7pJU9ak&si=BnhLwZCQW8zy0ksH" },
     ],
   },
   "personalized-soundscape-design": {
@@ -139,6 +145,22 @@ export default async function WorkDetailPage(props: PageProps<"/work/[slug]">) {
         <div className="text-sm space-y-1 mb-8">
           {project.tracklist.map((track, i) => (
             <p key={i}>{track}</p>
+          ))}
+        </div>
+      )}
+
+      {project.links && (
+        <div className="text-sm flex gap-4 mb-8">
+          {project.links.map((link, i) => (
+            <a
+              key={i}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline opacity-50 hover:opacity-100 transition-opacity"
+            >
+              {link.label}
+            </a>
           ))}
         </div>
       )}
