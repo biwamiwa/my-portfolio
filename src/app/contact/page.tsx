@@ -2,7 +2,7 @@ export default function ContactPage() {
   return (
     <div className="text-sm leading-loose">
       <p>
-        <a href="mailto:miwatanaka.gle@gmail.com">miwatanaka.gle@gmail.com</a>
+        <a href="mailto:officemiwa2026@gmail.com">officemiwa2026@gmail.com</a>
       </p>
       <div className="mt-6" />
       <p>
