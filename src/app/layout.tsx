@@ -38,6 +38,7 @@ export default function RootLayout({
         <nav className="grid grid-cols-12 px-6 pb-10">
           <div className="col-span-12 flex gap-6 text-sm">
             <Link href="/work">WORK</Link>
+            <Link href="/portfolio">PORTFOLIO</Link>
             <Link href="/about">ABOUT</Link>
             <Link href="/contact">CONTACT</Link>
           </div>
